@@ -1,0 +1,73 @@
+<!-- public/views/index.html -->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<base href="/" />       <!-- Necessary for HTML5Mode(true) -->
+		<title>Save The Children</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+		<!-- Favicon -->
+		<link rel='shortcut icon' href='/images/favicon.png' type='image/x-icon'/ >
+		
+		<!-- JS -->
+		<script type="text/javascript" src="/static/pdfjs-dist/build/pdf.js"></script>
+<!--		<script type="text/javascript" src="/static/pdfjs-dist/web/pdf_viewer.js"></script>-->
+<!--		<link rel="stylesheet" type="text/css" href="/static/pdfjs-dist/web/pdf_viewer.css">-->
+		<script type="text/javascript" src="/static/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/static/angular-ui-router/release/angular-ui-router.min.js"></script> 
+		<script type="text/javascript" src="/static/jquery/dist/jquery.min.js"></script> 
+		<script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="/javascripts/firebase.js"></script>
+	    <script src="/static/angular-material/angular-material.min.js"></script>
+        <script src="/static/angular-animate/angular-animate.min.js"></script>
+        <script src="/static/angular-aria/angular-aria.min.js"></script>
+        <script src="/static/angular-messages/angular-messages.min.js"></script>
+<!--		<script type="text/javascript" src="/javascripts/angular-pdfjs-viewer.js"></script>-->
+		
+		<!-- ANGULAR Main Files -->
+		<script type="text/javascript" src="/app-admin/app.module.js"></script>
+		<script type="text/javascript" src="/app-admin/app.routes.js"></script>
+		
+		<!-- Angular Pages -->
+		<script type="text/javascript" src="/app-admin/components/Authentication/authenticationModule.js"></script>
+		<script type="text/javascript" src="/app-admin/components/Authentication/authenticationService.js"></script>
+		<script type="text/javascript" src="/app-admin/components/Authentication/authenticationController.js"></script>
+		
+		<script type="text/javascript" src="/app-admin/components/Home/homeModule.js"></script>
+		<script type="text/javascript" src="/app-admin/components/Home/homeController.js"></script>
+		
+		<script type="text/javascript" src="/app-admin/components/Nav/navModule.js"></script>
+		<script type="text/javascript" src="/app-admin/components/Nav/navController.js"></script>
+		
+		<script type="text/javascript" src="/components/pdfUpload/pdfUploadModule.js"></script>
+		<script type="text/javascript" src="/components/pdfUpload/pdfUploadController.js"></script>
+		
+		<script type="text/javascript" src="/components/pushNotifications/pushNotificationsModule.js"></script>
+		<script type="text/javascript" src="/components/pushNotifications/pushNotificationsController.js"></script>
+	
+        <script src="/components/messages/messagesModule.js"></script>
+        <script src="/components/messages/messagesController.js"></script>
+      
+	</head>
+	
+	<body ng-app="stc_admin" style="background-color:#F2F2F2;">
+
+		<!-- ANGULAR DYNAMIC CONTENT -->
+		<div class="row">
+			<div ui-view="nav"></div>
+			<div class="col-md-12 col-sm-9">
+				<div ui-view="content"></div>
+			</div>
+		</div>
+	
+	<div ui-view="footer"></div>
+
+	</body>
+</html>

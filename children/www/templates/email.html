@@ -1,0 +1,44 @@
+    <ion-pane>
+      <!---->
+      <!--<div class="bar bar-subheader">
+        <h2 class="title">Send an email</h2>
+      </div>-->
+      <ion-content>
+<!--         <div class="list">
+
+          <ion-item>
+            <ion-label>Friends</ion-label>
+            <ion-radio value="friends" checked></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Family</ion-label>
+            <ion-radio value="family"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Enemies</ion-label>
+            <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+          </ion-item>
+        </div> -->
+      <div class="card" ng-controller="EmailCtrl">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span> Send a Message! </span>
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">First Name</span>
+            <input type="text" placeholder="Jane" ng-model="data.firstname">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Doe" ng-model="data.lastname">
+          </label>
+          <label class="item item-input" scroll="false">
+            <!--<span class="input-label">Write something</span>-->
+            <textarea placeholder="Write a Letter to your Child!" rows="10" ng-model="data.email"></textarea>
+          </label>
+          <button class="button button-block button-positive activated"
+                  ng-click="sendEmail()">Send</button>
+        </div>
+      </div>
+      </ion-content>
+    </ion-pane>

@@ -1,0 +1,38 @@
+<ion-view view-title="Home" name="">
+	<ion-content class="padding">
+		<div class="bar bar-header bar-light">
+			<h1 class="title">Welcome {{name}} !</h1>
+		</div>
+		<div class="card">
+			<div class="item item-divider">
+
+			</div>
+			<div class="item item-text-wrap">
+				<h3>You have {{files.length}} new messages.</h3>
+			</div>
+			<div class="item item-divider" ng-repeat="file in files" ng-click=openModal(file)>
+				Date: {{file.date}}
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view id='modal'>
+    <ion-header-bar>
+	  <button class="button" ng-click="closeModal()">Close</button>
+      <h1 class="title">PDF: {{currentPDF.date}}</h1>
+	  <a id="save" class="button" href="" download="{{currentPDF.date}}.pdf">Save</a>
+    </ion-header-bar>
+    <div class="bar bar-subheader">
+        <button class="button" ng-click="renderPrev()">Previous</button>
+        <h1 class="title">{{pageNum}}</h1>
+        <button class="button" ng-click="renderNext()">Next</button>
+    </div>
+    <ion-content>
+		<ion-scroll zooming="true" direction="xy" min-zoom="-2" class="ionic-scroll"  delegate-handle="image">
+    		<canvas id="pdf"></canvas>
+		</ion-scroll>
+    </ion-content>
+  </ion-modal-view>
+</script>

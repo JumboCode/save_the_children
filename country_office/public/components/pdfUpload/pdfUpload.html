@@ -1,0 +1,54 @@
+<div class="form">
+	<h3 class="text-center">PDF Upload</h3>
+
+    <div class = "container-fluid">
+    <div class = "row">
+        <div class = "col-sm-4">
+		<form class="pdf-form" name="pushform">
+			<label for="Id"> Child ID: </label> 
+		    <input type="text" id="childId" name="childId" ng-model="childId"/>
+			<button ng-click="checkId()">Check Child ID </button>
+		</form>
+        </div>
+		
+        <div class = "col-sm-4">
+		<div ng-show="validChildId">
+			Click here to upload letter(s). 
+				<br> PDF format only.
+			<input type="file" id="letter" name="letter" accept='.pdf'multiple>
+			</input>
+        </div>
+        </div>
+        <div class = "col-sm-4">
+        Please review the child ID before uploading.
+        <button id="submit" ng-click="uploadPDF()">Upload PDF</button>
+        </div>
+
+    </div>
+    <div class = "row">
+        <div class = "col-sm-12">
+			<button ng-click="previewFile()">Preview PDF</button>
+			</br></br>
+			<div ng-show="pdfLoaded">
+				<ul class="pager">
+					<li><a ng-click="renderPrev()">Previous</a></li>
+					<li><a ng-click="renderNext()">Next</a></li>
+				</ul>
+				</br></br>
+				<p>Page Number: {{pageNum}}</p>
+				<canvas id="the-canvas" style="border:1px solid #000000;"></canvas>
+				</br></br>
+			</div>
+        </div>
+    </div>
+	    <!--<div class = "col-sm-4">
+		<button id="submit" ng-click="uploadPDF()">Upload PDF</button>
+        </div>--!>
+<!--
+			<p> If you uploaded a wrong PDF, click cancel. </p>
+			<a href="javascript:history.go(0)"> Cancel </a>
+-->
+	</div>
+    </div>
+
+</div>

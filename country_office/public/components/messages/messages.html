@@ -1,0 +1,36 @@
+<div class = "form">
+<div class = "ui grid">
+    <div class = "container-fluid">
+    <h2 class = "ui header"> Your Messages </h2>
+    <div class = "col-sm-4">
+        <button class= "message" ng-repeat="message in
+            messages">
+             <div class="item" ng-click = "setMessage(message)">
+             <div class="content">
+                 <div class = "ui medium header">
+                     From: {{message.from}}
+                 </div>
+                 <div class = "description">
+                     Regarding: {{message.regarding}}<br>
+                     Subject: {{message.subject}}
+                 </div> 
+            </div>
+            </div>
+        </button>
+        </div>
+    <div class = "col-sm-8">
+    <div class = "ui segment" ng-show = "currentMessage"> 
+        <div class = "ui medium header">From: {{currentMessage.from}}</div>
+        <div class = "ui medium header">Regarding: {{currentMessage.regarding}}</div>
+        <div class = "ui medium header">Subject: {{currentMessage.subject}}</div>
+        <div class = "ui medium header">Region: {{currentMessage.region}}</div>
+        <div class = "ui medium header">Message: {{currentMessage.message}}</div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!--    <div class = "ten wide column">
+        <div class = "ui large piled segment">
+        <h3 class  = "ui header"> --!>

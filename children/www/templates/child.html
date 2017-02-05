@@ -1,0 +1,76 @@
+<ion-view view-title="Home" name="">
+    <ion-content class="padding">
+        <div class="card">
+            <div class="item item-text-wrap">
+                <img class="image" src={{photourl}}>
+            </div>
+        </div>
+
+    <div ng-bind-html="child_name"></div>
+    <section id="cd-timeline" class="cd-container">
+        <!--<div ng-bind-html="view_story"></div>-->
+        <ul ng-repeat="child in children[0]" ng-show="child.info != 'null'">
+            <div class="cd-timeline-block row">
+
+                <!--<div class="col-40 col-center cd-timeline-content">
+                    {{child.info}}
+                </div>
+
+                <div class="col col-center col-offset-10 cd-timeline-left-img">
+                    <img src="img/circle.png" alt="Circle" align: "middle">
+                </div> -->
+
+                <div class="col col-20 col-center cd-timeline-img">
+                    <img src="img/circle.png" alt="Circle" align: "middle">
+                </div> 
+
+                <div class="col col-offset-10 col-center cd-timeline-content">
+                    {{child.info}}
+                </div> 
+
+            </div> 
+            <br>
+        </ul>
+<!-- cd-timeline-block -->
+        <!--<div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/cd-icon-movie.svg" alt="Movie">
+            </div> 
+
+            <div class="cd-timeline-content">
+                <div ng-bind-html="birthday_story"></div>
+            </div> 
+        </div> 
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/cd-icon-location.svg" alt="Movie">
+            </div> 
+
+            <div class="cd-timeline-content">
+                <div ng-bind-html="ambition_story"></div>
+            </div> 
+        </div> 
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+                <img src="img/cd-icon-picture.svg" alt="Picture">
+            </div>
+
+            <div class="cd-timeline-content">
+                <div ng-bind-html="background_story"></div>
+            </div> 
+        </div> 
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/cd-icon-location.svg" alt="Location">
+            </div> 
+
+            <div class="cd-timeline-content">
+                <div ng-bind-html="about_story"></div>
+            </div> 
+        </div> -->
+
+    </ion-content>
+</ion-view>

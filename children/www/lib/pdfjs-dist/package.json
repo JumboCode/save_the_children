@@ -1,0 +1,54 @@
+{
+  "name": "pdfjs-dist",
+  "version": "1.6.366",
+  "main": "build/pdf.js",
+  "description": "Generic build of Mozilla's PDF.js library.",
+  "keywords": [
+    "Mozilla",
+    "pdf",
+    "pdf.js"
+  ],
+  "homepage": "http://mozilla.github.io/pdf.js/",
+  "bugs": {
+    "url": "https://github.com/mozilla/pdf.js/issues"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-ensure": "^0.0.0"
+  },
+  "browser": {
+    "node-ensure": false
+  },
+  "format": "amd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/pdfjs-dist.git"
+  },
+  "gitHead": "e45484772b2b853d640240a69ad3502f70a4f79e",
+  "_id": "pdfjs-dist@1.6.366",
+  "scripts": {},
+  "_shasum": "ae09dd6bee753bbe032ff38a43dc4baabd78b37e",
+  "_from": "pdfjs-dist@>=1.6.304 <2.0.0",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "4.6.1",
+  "_npmUser": {
+    "name": "pdfjsbot",
+    "email": "ydelendik@mozilla.com"
+  },
+  "maintainers": [
+    {
+      "name": "pdfjsbot",
+      "email": "pdfjsbot@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ae09dd6bee753bbe032ff38a43dc4baabd78b37e",
+    "tarball": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-1.6.366.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/pdfjs-dist-1.6.366.tgz_1480930151498_0.47857262869365513"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-1.6.366.tgz"
+}

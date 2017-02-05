@@ -1,0 +1,27 @@
+<div class="">
+
+	<div class="form">
+		
+		<h3 class="text-center">Send Push Notifications To Region</h3>
+
+		<form class="push-form" name="pushform">
+			<label for="title">Title</label>
+			<input id="title" class="form-control" placeholder="Enter Title" name="title" ng-model="title" required/>
+			
+			<label for="message" >
+				Notification Message
+				<span class="glyphicon glyphicon-info-sign" data-container="body" data-toggle="popover" data-placement="top" data-content="This will be the data displayed when they click on the push notification."></span>
+			</label>
+			<textarea id="message" class="form-control" placeholder="Notification Message" ng-model="message" required></textarea>
+			
+			<label>Enter Region</label>
+			<select class="form-control" ng-model="push_region" ng-options="region.name for region in regions" required>
+				<option value="">Select Region</option>
+			</select>
+			
+			</br></br>
+			<button type="submit" ng-click='pushform.$valid && emitMessage()' class="btn btn-primary">Send Message To Server</button>
+		</form>
+	</div>
+</div>
+

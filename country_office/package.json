@@ -1,0 +1,28 @@
+{
+  "name": "save-the-children-admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-messages": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "~1.15.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "firebase": "^3.5.2",
+    "firebase-admin": "^4.0.3",
+    "jade": "~1.11.0",
+    "jquery": "^3.1.1",
+    "morgan": "~1.7.0",
+    "pdfjs-dist": "^1.6.304",
+    "serve-favicon": "~2.3.0"
+  }
+}
